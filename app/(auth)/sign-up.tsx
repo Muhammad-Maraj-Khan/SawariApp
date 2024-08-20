@@ -174,7 +174,10 @@ const SignUp = () => {
               </Text>
               <CustomButton
                 title={"Browse Home"}
-                onPress={() => router.replace("/(root)/(tabs)/home")}
+                onPress={() => {
+                  setShowSuccessModal(false);
+                  router.replace("/(root)/(tabs)/home");
+                }}
                 className={"mt-5"}
               />
             </View>
